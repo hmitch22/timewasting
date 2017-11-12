@@ -1,0 +1,223 @@
+.dividerLine{
+	width: auto;
+	border: 10px solid black;
+}
+
+#contentBox{
+	background-color: #d9d9d9;
+	height: 1000px;
+}
+
+#canvas{
+	display: inline-block;
+	margin-top: 5px;
+	background-color: grey;
+	background-image: url("images/smiley.png");
+	background-size: 500px 500px;
+	height: 500px;
+	width: 500px;
+	margin-left: 5px;
+}
+
+#options{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#hueColorSelector{
+	background-color: grey;
+	margin-top: 5px;
+	height: 150px;
+	width: 485px;
+}
+
+#selectedColor{
+	display: inline-flex;
+	margin-top: 5px;
+	vertical-align: top;
+	background-color: grey;
+	width: 100px;
+	height: 100px;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+#selectedColorInfo{
+	text-align: center;
+	opacity: 0;
+	width: 100px;
+}
+
+#selectedColorInfo:hover{
+	opacity: 1;
+}
+
+#additionalSelectors{
+	display: inline-block;
+}
+
+#lightnessColorSelector{
+	margin-top: 5px;
+	background-color: grey;
+	height: 47px;
+	width: 380px;
+}
+
+#saturationColorSelector{
+	margin-top: 5px;
+	background-color: grey;
+	height: 48px;
+	width: 380px;
+}
+
+
+#paletteAdd{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	background-color: rgb(5, 157, 0);
+	
+	line-height: 35px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	border: grey solid 1px;
+	
+}
+
+#paletteColors{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.paletteColor{
+	display: inline-block;
+	background-color: grey;
+	height: 40px;
+	width: 40px;
+	
+	margin-left: 8px;
+}
+
+.pixel{
+	position: absolute;
+	background-color: white;
+	width: 10px;
+	height: 10px;
+	
+	z-index: 10;
+}
+
+.pixelHue{
+	position: absolute;
+	height: 150px;
+}
+
+.pixelLightness{
+	position: absolute;
+	height: 47px;
+}
+
+.pixelSaturation{
+	position: absolute;
+	height: 48px;
+}
+
+/* center page; 1000 px wide*/
+body{
+	padding: 30px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#canvas:hover,
+#canvas:focus {
+    cursor: pointer;
+}
+
+#hueColorSelector:hover,
+#hueColorSelector:focus {
+    cursor: pointer;
+}
+
+#lightnessColorSelector:hover,
+#lightnessColorSelector:focus {
+    cursor: pointer;
+}
+
+#saturationColorSelector:hover,
+#saturationColorSelector:focus {
+    cursor: pointer;
+}
+
+#paletteAdd:hover,
+#paletteAdd:focus {
+    cursor: pointer;
+}
+
+.paletteColor:hover,
+.paletteColor:focus {
+    cursor: pointer;
+}
+
+#sampleBrushes{
+	display: flex;
+	
+	margin-top: 10px;
+	height: 50px;
+	width: auto;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.sampleBrush{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: silver;
+	height: 55px;
+	width: 55px;
+	
+	border: 1px solid silver;
+	
+	border-radius: 50%;
+}
+
+.sampleBrush:hover,
+.sampleBrush:focus {
+    cursor: pointer;
+}
+
+#customBrush{
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: silver;
+	height: 110px;
+	width: 110px;
+	
+	border: 1px solid silver;
+}
+
+#customBrush:hover,
+#customBrush:focus{
+	cursor: pointer;
+}
+
+.pixelCustomBrush{
+	position: absolute;
+	background-color: red;
+	width: 10px;
+	height: 10px;
+}
+
+#download{
+	display: none;
+}
