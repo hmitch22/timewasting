@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Game</title>
+	<link rel="icon" href="../images/game_icon.png">
+	
+	<!-- external files -->
+	<link rel="stylesheet" type="text/css" href="../css/mapmaker.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../js/mapmaker.js"></script>
+</head>
+
+<body>
+	<div id="mapmakerContent">
+		<div id="map">
+			<div id="mapFeatures"></div>
+			<canvas id="mapCanvas" width="750" height="750"></canvas>
+		</div>
+		<div id="sidebar">
+			<div id="selection"></div>
+			<div id="categories">
+				<div id="BuildingsCategoryButton" class="categoryButton">Buildings</div>
+				<div id="NaturalCategoryButton" class="categoryButton">Natural</div>
+				<div id="MiscCategoryButton" class="categoryButton">Misc.</div>
+				<div id="TerrainCategoryButton" class="categoryButton">Terrain</div>
+				<div id="ThemesCategoryButton" class="categoryButton">Themes</div>
+			</div> 
+		</div>
+	</div>
+	
+	<!-- -->
+	<div id="mapmakerLoader" class="loader">
+		<div class="loadingCircle"></div>
+	</div>
+</body>
+</html>
